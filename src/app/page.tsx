@@ -1,5 +1,5 @@
-import { Box, Typography } from '@mui/material'
+import { Typography } from '@mui/material'
 
-export default function Home() {
+export default function Page() {
   return <Typography>test</Typography>
 }
