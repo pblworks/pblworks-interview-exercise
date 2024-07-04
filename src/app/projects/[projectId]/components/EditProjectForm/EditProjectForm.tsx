@@ -1,5 +1,6 @@
 'use client'
 
+import { updateProject } from '@/app/projects/[projectId]/actions/update-project'
 import { LoadingButton } from '@mui/lab'
 import {
   FormControl,
@@ -20,7 +21,24 @@ export const EditProjectForm = ({ project }: { project: Project }) => {
   const [description, setDescription] = useState(project.description)
   const [isLoading, setIsLoading] = useState(false)
 
-  const onSave = async () => {}
+  const onSave = async () => {
+    setIsLoading(true)
+    try {
+      await updateProject({
+        id: project.id,
+        title,
+        subhead,
+        description,
+      })
+    } catch (error: unknown) {
+      console.error('Error while trying to update project', {
+        project: { id: project.id, title, description, subhead },
+        error,
+      })
+    } finally {
+      setIsLoading(false)
+    }
+  }
 
   return (
     <Paper sx={{ padding: 2 }}>
@@ -40,7 +58,7 @@ export const EditProjectForm = ({ project }: { project: Project }) => {
             fullWidth
             label="Project Subhead"
             value={subhead}
-            placeholder="Use a small sentence to describe the project, eg. 'Students will earn Newtons Laws while constructing a boxing glove'"
+            placeholder="Use a small sentence to describe the project, eg. 'Students will learn Newtons Laws while constructing a boxing glove'"
             onChange={(event) => setSubhead(event.target.value)}
           />
         </Grid>

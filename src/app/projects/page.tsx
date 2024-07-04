@@ -6,7 +6,7 @@ import { Prisma } from '@prisma/client'
 
 export default async function Page() {
   const projects = await prisma.project.findMany({
-    orderBy: { title: Prisma.SortOrder.asc },
+    orderBy: { id: Prisma.SortOrder.asc },
   })
   return (
     <Stack spacing={2}>

@@ -6,7 +6,9 @@ import {
   TableRow,
   TableCell,
   TableBody,
+  Link,
 } from '@mui/material'
+import NextLink from 'next/link'
 import { Project } from '@prisma/client'
 
 export const ProjectsList = ({ projects }: { projects: Project[] }) => {
@@ -28,7 +30,9 @@ export const ProjectsList = ({ projects }: { projects: Project[] }) => {
             >
               <TableCell>{project.id}</TableCell>
               <TableCell component="th" scope="row">
-                {project.title || 'Untitled Project'}
+                <Link component={NextLink} href={`/projects/${project.id}`}>
+                  {project.title || 'Untitled Project'}
+                </Link>
               </TableCell>
               <TableCell>
                 {project.subhead || 'This project does not have a subhead'}
