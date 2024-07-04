@@ -26,10 +26,13 @@ export const ProjectsList = ({ projects }: { projects: Project[] }) => {
               key={project.id}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
+              <TableCell>{project.id}</TableCell>
               <TableCell component="th" scope="row">
-                {project.title}
+                {project.title || 'Untitled Project'}
               </TableCell>
-              <TableCell>{project.subhead}</TableCell>
+              <TableCell>
+                {project.subhead || 'This project does not have a subhead'}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
