@@ -45,23 +45,24 @@ We want you to build a header which will be rendered across both pages. Almost e
    2. Settings
    3. Avalytics
    4. Logout
-4. In the center part of the header and only while editing a project, the project title should appear. Remove it from the project page in this case.
+4. In the center part of the header and only while editing a project, the project title should appear. This is the only non-static piece of data. Remove the title from the project page in this case.
 
-What we are asking for this exercise is to see cleanly written code and components that are reusable, maintainable and tested.
+What we are asking for this exercise is to see cleanly written code and components that are reusable and maintainable. We would also like to see how you would write tests for your UI components.
 
 ### Part 2: Create an auto-save feature
 
 For this part, we want you to remove entirely the "Save Project" button that exists in the edit project form. Instead, we want you to implement an auto-save feature. As the user types something in any field, it should automatically be saved to the database. It is up to you to architect this solution in any way you want.
 
-Some tips to consider while implementing this:
+Things to consider while working on this:
 
-- Will there be any race conditions if a user types too fast or eratically?
+- What happens if a user types something while "save" is happening?
 - What happens if a user quickly tabs between different fields and changes values almost at the same time in all of them?
 - Is the rest of the UI (eg. the Project Title in the header) updated immediately?
-- Is there any way to test the scenarios mentioned above?
+
+Tests for these scenarios will also be appreciated.
 
 ## Tips
 
-- Feel free to comment your code. It is very helpful to see your trail of thought and please explain if you took any shortcuts knowningly.
-- Use small commits with helpful descriptions. This will help us evaluate your code better
-- We estimate that approximately 2 hours are needed for Part 1 and 4 hours for Part 2. We will not track your time and you are free to use as much time as you want for this exercise. But your time is precious and this exercise is just meant as a starting point for any discussions we will have during the interview.
+- Feel free to comment your code. It is very helpful to see your trail of thought. If you took some shortcuts to expendite this exercise, writing a comment about them will also help.
+- Use small commits with helpful descriptions. This will make the evaluation of your code easier.
+- We estimate that approximately 2 hours are needed for Part 1 and 5 hours for Part 2. We will not track your time and you are free to use as much time as you want for this exercise. But your time is precious and this exercise is just meant as a starting point for any discussions we will have during the interview. It doesn't need to be perfect. It just needs to showcase your talent and capabilities.
