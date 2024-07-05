@@ -1,8 +1,8 @@
-This repo is meant to be used as the interview exercise for Engineering roles in PBLWorks
+This repo is meant to be used as the interview exercise for Engineering roles in PBLWorks.
 
 ## Repo Overview
 
-This is a Next.js project. It is using the App Router of Next.js v14. It is also using Prisma ORM along with a SQLite database that you can find at: `src/prisma/dev.db`. Final MUI is already setup and ready to use.
+This is a Next.js project. It is using the App Router of Next.js v14. It is also using Prisma ORM along with a SQLite database that you can find at: `src/prisma/dev.db`. Finally, MUI is already setup and ready to use.
 
 ### Models
 
@@ -10,7 +10,7 @@ For the purposes of this exercise, we only have a very simple model: `Project`. 
 
 ### /projects
 
-The first route is just a list of projects. It uses a server component to fetch all projects and list them in a table, sorted by id. There is also a button to create a new project via invoking a server action. This creates an empty project without a title, subhead or description, and redirects to the edit page
+The first route is just a list of projects. It uses a server component to fetch all projects and list them in a table, sorted by id. There is also a button to create a new project via invoking a server action. This creates an empty project without a title, subhead or description, and redirects to the edit page.
 
 ### /projects/\[projectId\]
 
@@ -30,9 +30,9 @@ In order to run this app, you need to follow these steps
 
 ## Assignment
 
-This assignment constists of two parts. The first is meant to allow you to showcase how you would structure your code, how you would break down components and how you would build a clean UI. The second is meant to show how you would approach solving a very hard problem and find creative solutions.
+This assignment consists of two parts. The first is meant to allow you to showcase how you would structure your code, how you would break down components and how you would build a clean UI. The second is meant to show how you would approach solving a very hard problem and find creative solutions.
 
-This assignment does not have a unique correct solution. Anyone could do things differently and still produce a really could outcome. It is meant as a starting point for the technical interview, to allow discussion over the choices made here
+This assignment does not have a unique correct solution. Anyone could do things differently and still produce a really good outcome. It is meant as a starting point for the technical interview, to allow discussion over the choices you've made.
 
 ### Part 1: Build a custom header
 
@@ -47,7 +47,7 @@ We want you to build a header which will be rendered across both pages. Almost e
    4. Logout
 4. In the center part of the header and only while editing a project, the project title should appear. Remove it from the project page in this case.
 
-What we are asking for this exercise is to see cleanly written code and components that are reusable, maintainable and tested
+What we are asking for this exercise is to see cleanly written code and components that are reusable, maintainable and tested.
 
 ### Part 2: Create an auto-save feature
 

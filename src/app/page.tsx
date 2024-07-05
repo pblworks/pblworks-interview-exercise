@@ -1,5 +1,5 @@
 import { Typography } from '@mui/material'
 
 export default function Page() {
-  return <Typography>test</Typography>
+  return <Typography>PBLWorks technical exercise</Typography>
 }
