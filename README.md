@@ -51,7 +51,7 @@ What we are asking for this exercise is to see cleanly written code and componen
 
 ### Part 2: Create an auto-save feature
 
-For this part, we want you to remove entirely the "Save Project" button that exists in the edit project form. Instead, we want you to implement an auto-save feature. As the user types in the database, it should be automatically saving things to the database. It is up to you to architect this solution in any way you want.
+For this part, we want you to remove entirely the "Save Project" button that exists in the edit project form. Instead, we want you to implement an auto-save feature. As the user types something in any field, it should automatically be saved to the database. It is up to you to architect this solution in any way you want.
 
 Some tips to consider while implementing this:
 
@@ -59,3 +59,9 @@ Some tips to consider while implementing this:
 - What happens if a user quickly tabs between different fields and changes values almost at the same time in all of them?
 - Is the rest of the UI (eg. the Project Title in the header) updated immediately?
 - Is there any way to test the scenarios mentioned above?
+
+## Tips
+
+- Feel free to comment your code. It is very helpful to see your trail of thought and please explain if you took any shortcuts knowningly.
+- Use small commits with helpful descriptions. This will help us evaluate your code better
+- We estimate that approximately 2 hours are needed for Part 1 and 4 hours for Part 2. We will not track your time and you are free to use as much time as you want for this exercise. But your time is precious and this exercise is just meant as a starting point for any discussions we will have during the interview.
