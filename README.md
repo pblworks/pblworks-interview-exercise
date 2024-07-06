@@ -47,7 +47,7 @@ We want you to build a header which will be rendered across both pages. Almost e
    4. Logout
 4. In the center part of the header and only while editing a project, the project title should appear. This is the only non-static piece of data. Remove the title from the project page in this case.
 
-What we are asking for this exercise is to see cleanly written code and components that are reusable and maintainable. We would also like to see how you would write tests for your UI components.
+What we are asking for this exercise is to see cleanly written code and components that are reusable and maintainable. We would also like to see how you would write tests for your UI components. Feel free to use any component that the MUI library offers.
 
 ### Part 2: Create an auto-save feature
 
@@ -59,7 +59,7 @@ Things to consider while working on this:
 - What happens if a user quickly tabs between different fields and changes values almost at the same time in all of them?
 - Is the rest of the UI (eg. the Project Title in the header) updated immediately?
 
-Tests for these scenarios will also be appreciated.
+Tests for these scenarios will also be appreciated. You can install any new packages that you may need.
 
 ## Tips
 
